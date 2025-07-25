@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, GraduationCap } from "lucide-react";
 
 export const AboutSection = () => {
     return (
@@ -12,20 +12,20 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">
-                            Passionate Web Developer & Tech Creator
+                            Software Engineering Student & Developer
                         </h3>
 
                         <p className="text-muted-foreground">
-                            With over 5 years of experience in web development, I specialize in creating
-                            dynamic and responsive web applications. My expertise lies in JavaScript, React,
-                            and Node.js, allowing me to build full-stack solutions that are both efficient and
-                            scalable.
+                            I'm a Computer Science student at the University of Iowa with a 4.15 GPA, 
+                            pursuing a minor in Business Administration. Currently working as a Software 
+                            Engineering Intern at Principal Financial, I'm developing full-stack solutions 
+                            using AWS, TypeScript, and React.
                         </p>
 
                         <p className="text-muted-foreground">
-                            I am a passionate web developer with a keen interest in creating innovative and 
-                            user-friendly web applications. My journey in tech has been driven by a desire 
-                            to solve real-world problems through code and design.
+                            My passion lies in creating efficient, scalable applications that solve real business 
+                            problems. I have experience with both front-end and back-end development, and I'm 
+                            always eager to learn new technologies and tackle challenging projects.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -34,7 +34,11 @@ export const AboutSection = () => {
                                 Get in Touch
                             </a>
 
-                            <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a 
+                                href="/resume.pdf" 
+                                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                                target="_blank"
+                            >
                                 {" "}
                                 Download Resume
                             </a>
@@ -47,10 +51,10 @@ export const AboutSection = () => {
                                     <Code className="text-primary w-6 h-6" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Web Development</h4>
+                                    <h4 className="font-semibold text-lg">Development Skills</h4>
                                     <p className="text-muted-foreground">
-                                        I specialize in building responsive and dynamic web applications using modern
-                                        technologies like React, Node.js, and more.
+                                        Proficient in Java, Python, TypeScript, and JavaScript. Experienced with 
+                                        AWS, React, Next.js, and various other modern development tools and frameworks.
                                     </p>
                                 </div>
                             </div>
@@ -58,13 +62,13 @@ export const AboutSection = () => {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="text-primary w-6 h-6" />
+                                    <GraduationCap className="text-primary w-6 h-6" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> UI/UX Design </h4>
+                                    <h4 className="font-semibold text-lg">Education</h4>
                                     <p className="text-muted-foreground">
-                                        I specialize in building responsive and dynamic web applications using modern
-                                        technologies like React, Node.js, and more.
+                                        Computer Science major at the University of Iowa with a 4.15 GPA. 
+                                        Class of 2027 with a minor in Business Administration.
                                     </p>
                                 </div>
                             </div>
@@ -75,19 +79,18 @@ export const AboutSection = () => {
                                     <Briefcase className="text-primary w-6 h-6" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg"> Project Management </h4>
+                                    <h4 className="font-semibold text-lg">Work Experience</h4>
                                     <p className="text-muted-foreground">
-                                        I specialize in building responsive and dynamic web applications using modern
-                                        technologies like React, Node.js, and more.
+                                        Currently a Software Engineering Intern at Principal Financial, 
+                                        developing enterprise applications. Previous experience at Iowa DOT 
+                                        and University of Iowa ITS.
                                     </p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
     );
-    
 }

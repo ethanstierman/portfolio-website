@@ -4,23 +4,35 @@ import { cn } from "@/lib/utils";
 const skills = [
     // Frontend Skills
     {name: "HTML/CSS", level: 95, category: "frontend"},
-    {name: "JavaScript", level: 90, category: "frontend"},
+    {name: "JavaScript", level: 80, category: "frontend"},
     {name: "React", level: 85, category: "frontend"},
-    {name: "TypeScript", level: 80, category: "frontend"},
-    {name: "Next.js", level: 75, category: "frontend"},
-    {name: "Tailwind CSS", level: 90, category: "frontend"},
+    {name: "TypeScript", level: 90, category: "frontend"},
+    {name: "Next.js", level: 85, category: "frontend"},
+    {name: "Tailwind CSS", level: 80, category: "frontend"},
+    {name: "UI/UX Design", level: 80, category: "frontend"},
 
     // Backend Skills
+    {name: "Java", level: 90, category: "backend"},
+    {name: "Python", level: 85, category: "backend"},
+    {name: "AWS", level: 85, category: "backend"},
+    {name: "C++", level: 75, category: "backend"},
+    {name: "C", level: 75, category: "backend"},
     {name: "Node.js", level: 85, category: "backend"},
     {name: "Express.js", level: 80, category: "backend"},
-    {name: "AWS", level: 70, category: "tools"},
-    {name: "Java", level: 75, category: "backend"},
-    {name: "Python", level: 70, category: "backend"},
+    {name: "x86 Assembly", level: 70, category: "backend"},
+    {name: "MATLAB", level: 70, category: "backend"},
 
-    // Tools
+    // Tools & Technologies
+    {name: "AWS", level: 85, category: "tools"},
     {name: "Git/GitHub", level: 90, category: "tools"},
+    {name: "GitLab", level: 85, category: "tools"},
     {name: "VS Code", level: 95, category: "tools"},
     {name: "Postman", level: 80, category: "tools"},
+    {name: "Power BI", level: 80, category: "tools"},
+    {name: "Workday Software", level: 80, category: "tools"},
+    {name: "CI/CD", level: 85, category: "tools"},
+    {name: "Unit Testing", level: 85, category: "tools"},
+    {name: "Microsoft Office", level: 90, category: "tools"}
 ]
 
 const categories = ["all", "frontend", "backend", "tools"];

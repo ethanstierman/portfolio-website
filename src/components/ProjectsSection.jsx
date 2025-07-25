@@ -3,28 +3,28 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Project One",
-        description: "A brief description of Project One.",
-        image: "/projects/Dave.jpg",
-        tags: ["React", "JavaScript", "CSS"],
+        title: "AI Financial Advisor",
+        description: "Led a 6-person intern team at Principal's CodeJam to build an AI-powered financial advice web application. Leveraged OpenAI API for personalized recommendations and implemented full-stack features using React, TypeScript, and AWS services.",
+        image: "/projects/principal.jpg",
+        tags: ["React", "TypeScript", "AWS", "Express.js", "OpenAI API"],
         demoURL: "#",
         gitHubURL: "#",
     },
     {
-        id: 1,
-        title: "Project One",
-        description: "A brief description of Project One.",
-        image: "/projects/Dave.jpg",
-        tags: ["React", "JavaScript", "CSS"],
+        id: 2,
+        title: "Personal Portfolio",
+        description: "Designed and developed a modern portfolio website using React, Next.js, and TailwindCSS. Features dark/light mode, smooth animations, responsive design, and a contact form integrated with EmailJS for direct communication.",
+        image: "/projects/website.jpg",
+        tags: ["React", "TailwindCSS", "Next.js", "EmailJS"],
         demoURL: "#",
-        gitHubURL: "#",
+        gitHubURL: "https://github.com/ethanstierman/portfolio",
     },
     {
-        id: 1,
-        title: "Project One",
-        description: "A brief description of Project One.",
-        image: "/projects/Dave.jpg",
-        tags: ["React", "JavaScript", "CSS"],
+        id: 3,
+        title: "Word Ladder Game",
+        description: "Engineered a Python-based word game implementing efficient algorithms including breadth-first search for node network navigation and binary search for quick word lookup. Added word frequency analysis for dynamic difficulty adjustment.",
+        image: "/projects/wordLadder.jpg",
+        tags: ["Python", "Algorithms", "Data Structures"],
         demoURL: "#",
         gitHubURL: "#",
     },
@@ -98,7 +98,7 @@ export const ProjectsSection = () => {
                         target="_blank" 
                         href="https:/github.com/ethanstierman"
                     >
-                        Check My Github <ArrowRight size = {16}/>   
+                        Check Out My Github <ArrowRight size = {16}/>   
                     </a>
                 </div>
             </div>

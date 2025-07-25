@@ -3,17 +3,38 @@ import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from '@emailjs/browser';
 
 export const ContactSection = () => {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const handleSubmit = (e) => {
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => {
-            toast("Message sent! I'll get back to you soon.");
+        
+        try {
+            const formData = {
+                from_name: e.target.name.value,
+                from_email: e.target.email.value,
+                message: e.target.message.value,
+                to_email: 'eestierman@gmail.com'
+            };
+
+            await emailjs.send(
+                'service_qdm7ae8',
+                'template_xhnxjhm',
+                formData,
+                '0zlHZM-hM8JVpbxJq'
+            );
+
+            toast.success("Message sent! I'll get back to you soon.");
+        } catch (error) {
+            toast.error("Oops! Something went wrong. Please try again.");
+            console.error(error);
+        } finally {
             setIsSubmitting(false);
-        }, 1500)
+        }
     };
 
     return (
@@ -33,7 +54,7 @@ export const ContactSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-8">
-                        <h3 className="text-2xl font-semibold mb-6">
+                        <h3 className="text-2xl font-semibold mb-6 mr-18">
                             Contact Information
                         </h3>
                         <div className="space-y-6 justify-center">
@@ -41,7 +62,7 @@ export const ContactSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Mail className="text-primary w-6 h-6" /> {" "}
                                 </div>
-                                <div>
+                                <div className="ml-10">
                                     <h4 className="font-mediun"> Email </h4>
                                     <a 
                                         href="mailto:eestierman@gmail.com" 
@@ -55,7 +76,7 @@ export const ContactSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Phone className="text-primary w-6 h-6" /> {" "}
                                 </div>
-                                <div>
+                                <div className="ml-18">
                                     <h4 className="font-mediun"> Phone </h4>
                                     <a 
                                         href="tel:5157788070" 
@@ -69,7 +90,7 @@ export const ContactSection = () => {
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <MapPin className="text-primary w-6 h-6" /> {" "}
                                 </div>
-                                <div>
+                                <div className="ml-4">
                                     <h4 className="font-mediun"> Location </h4>
                                     <a 
                                         className="text-muted-foreground hover:text-primary transition-colors"
