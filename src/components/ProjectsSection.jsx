@@ -17,7 +17,7 @@ const projects = [
         image: "/projects/website.jpg",
         tags: ["React", "TailwindCSS", "Next.js", "EmailJS"],
         demoURL: "#",
-        gitHubURL: "https://github.com/ethanstierman/portfolio",
+        gitHubURL: "https://github.com/ethanstierman/portfolio-website",
     },
     {
         id: 3,
