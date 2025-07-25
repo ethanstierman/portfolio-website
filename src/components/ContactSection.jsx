@@ -22,10 +22,10 @@ export const ContactSection = () => {
             };
 
             await emailjs.send(
-                'service_qdm7ae8',
-                'template_xhnxjhm',
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
                 formData,
-                '0zlHZM-hM8JVpbxJq'
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
             );
 
             toast.success("Message sent! I'll get back to you soon.");
