@@ -17,9 +17,9 @@ export const AboutSection = () => {
 
                         <p className="text-muted-foreground">
                             I'm a Computer Science student at the University of Iowa with a 4.15 GPA, 
-                            pursuing a minor in Business Administration. Currently working as a Software 
-                            Engineering Intern at Principal Financial, I'm developing full-stack solutions 
-                            using AWS, TypeScript, and React.
+                            pursuing a minor in Business Administration. From my experiences working as a Software 
+                            Engineering Intern at Principal Financial, and previously at Iowa DOT and University of Iowa ITS,
+                            I've developed a strong foundation in full-stack development and cloud technologies.
                         </p>
 
                         <p className="text-muted-foreground">
@@ -37,7 +37,8 @@ export const AboutSection = () => {
                             <a 
                                 href="/resume.pdf" 
                                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
-                                target="_blank"
+                                download="Ethan_Stierman_Resume.pdf"
+                                aria-label="Download resume"
                             >
                                 {" "}
                                 Download Resume
